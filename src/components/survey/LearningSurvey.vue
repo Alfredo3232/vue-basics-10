@@ -13,22 +13,14 @@
           <label for="rating-poor">Poor</label>
         </div>
         <div class="form-control">
-          <input
-            type="radio"
-            id="rating-average"
-            value="average"
-            name="rating"
-            v-model="chosenRating"
-          />
+          <input type="radio" id="rating-average" value="average" name="rating" v-model="chosenRating" />
           <label for="rating-average">Average</label>
         </div>
         <div class="form-control">
           <input type="radio" id="rating-great" value="great" name="rating" v-model="chosenRating" />
           <label for="rating-great">Great</label>
         </div>
-        <p
-          v-if="invalidInput"
-        >One or more input fields are invalid. Please check your provided data.</p>
+        <p v-if="invalidInput">One or more input fields are invalid. Please check your provided data.</p>
         <div>
           <base-button>Submit</base-button>
         </div>
